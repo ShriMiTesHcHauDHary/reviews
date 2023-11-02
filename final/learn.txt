@@ -1,0 +1,32 @@
+class call by .name 
+
+id call by "name"  (value to manuplate)
+
+<i class="fas fa-chevron-left"></i>  fancy arrow
+
+window.addEventListener("DOMSContentLoaded", function(){
+showperson(currentitem);
+})  windows help in diff type of event handling "on","click","DOMSContentLoaded"
+
+function to inc arrow doward right when ever clicked
+nextbtn.addEventListener("click",function(){
+    
+    if(currentitem > reviews.length - 1){
+        currentitem = 0
+    }else {
+        currentitem++
+    }
+    showperson(currentitem)
+})
+
+function to inc arrow doward left when ever clicked
+prevbtn.addEventListener("click",function(){
+    
+    if(currentitem < 0){
+        currentitem = reviews.length - 1
+
+    }else {
+        currentitem--
+    }
+    showperson(currentitem)
+})
